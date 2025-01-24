@@ -15,7 +15,32 @@ Welcome! In this introductory tutorial to the Go language, you'll set up a dev c
 3. **Docker installed:** Required to run the dev container. [Get Docker here](https://www.docker.com/products/docker-desktop).
 4. **Command-line basics:** Your COMP211 command-line knowledge will serve you well here. If in doubt, review the Learn a CLI text!
 
-``` go
+## Part 1. Project Setup: Creating the Repository
+### Step 1. Create a Local Directory and Initialize Git
+(A) Open your terminal or command prompt.
+
+(B) Create a new directory for your project. (Note: Of course, if you'd like to organize this tutorial somewhere else on your machine, go ahead and change into that parent directory first. By default this will be in your user's home directory.):
+
+``` pwsh
+mkdir comp423-course-notes
+cd comp423-course-notes
+```
+
+(C) Initalize a new Git repository:
+
+``` pwsh
+git init
+```
+
+(D) Create a README file:
+``` pwsh
+echo "# Go Tutorial" > README.md
+git add README.md
+git commit -m "Initial commit with README"
+```
+
+
+<!-- ``` go
 package main
 
 import "fmt"
@@ -23,4 +48,4 @@ import "fmt"
 func main() {
     fmt.Println("hello world")
 }
-```
+``` -->
